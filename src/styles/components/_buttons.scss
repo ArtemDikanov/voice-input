@@ -1,0 +1,21 @@
+.main__button {
+    width: 80dvw;
+    height: 60px;
+    border-radius: 15px;
+
+    &-copy {
+        background-color: aquamarine;
+
+        &:active {
+            background-color: rgb(67, 212, 248);
+        }
+    }
+
+    &-record {
+        background-color: rgb(100, 220, 224);
+
+        &:active {
+            background-color: rgb(233, 108, 181);
+        }
+    }
+}

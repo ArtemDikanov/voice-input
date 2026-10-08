@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>speechproject</title>
+  </head>
+  <body>
+    <main class="main">
+      <button class="main__button main__button-record">Начать  запись</button>
+      <div class="main__statusBlock">
+        <p class="main__statusBlock-text"></p>
+        <img src="/public/goose.png" alt="ГУУУУсь" class="main__statusBlock-picture">
+      </div>
+      <textarea class="main__text"></textarea>
+      <button class="main__button main__button-copy" disabled>Скопировать текст</button>
+      <dialog class="main__errorDialog" aria-label="errorMessage" id="errorMessage">
+        <div class="main__errorDialog-content contentDialog">
+          <p class="contentDialog__text">Упс, браузер не поддерживается</p>
+          <button class="contentDialog__button">Ок</button>
+        </div>
+      </dialog>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
