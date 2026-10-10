@@ -33,11 +33,11 @@ else {
         let interim = '';
 
         for (let i = event.resultIndex; i < event.results.length; i++) {
-            if (!event.results[i].isFinal) {
-                interim += event.results[i][0].transcript + ' '
+            if (event.results[i].isFinal && event.results[i][0].confidence > 0) {
+                finalText += event.results[i][0].transcript + ' '
             }
             else {
-                finalText += event.results[i][0].transcript + ' '
+                interim += event.results[i][0].transcript + ' '
             }
         }
 
